@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#000808">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Calcula tu edad!"
+        android:textSize="24sp"
+        android:textColor="#00dce0"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_titulo"
+        android:calendarViewShown="false"
+        android:layout_marginTop="16dp"
+        android:spinnersShown="true"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Edad"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/date_picker"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#014D4E"
+        android:textColor="#00dce0"
+        android:padding="10dp"/>
+
+    <TextClock
+        android:id="@+id/reloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_calcular"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textColor="#00dce0"
+        android:format12Hour="HH:mm" />
+
+    <TextView
+        android:id="@+id/tv_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_below="@id/reloj"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00dce0"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
